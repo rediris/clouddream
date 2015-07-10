@@ -27,9 +27,9 @@ do
     src="/outputs/$name"
     echo -n "{\"id\":\"$id\",\"name\":\"$name\",\"src\":\"$src\"}" >> ../temp.json
     if [ "$id" != "$nfiles" ]; then
-	echo -n "," >> ../temp.json
+    echo -n "," >> ../temp.json
     else
-	echo "skipping trailing one"
+    echo "skipping trailing one"
     fi
     counter=`expr $counter + 1`
 done
